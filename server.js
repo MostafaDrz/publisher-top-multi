@@ -1,15 +1,7 @@
 const express = require("express");
 const app = express();
-const path = require("path");
-const https = require("https");
-const fs = require("fs");
 
 app.use("/static", express.static(__dirname + "/public"));
-
-const options = {
-  key: fs.readFileSync("key.pem"),
-  cert: fs.readFileSync("cert.pem"),
-};
 
 app.set("view engine", "ejs");
 
@@ -40,9 +32,7 @@ app.get("/contact", (req, res) => {
   res.render("contact");
 });
 
-const httpsServer = https.createServer(options, app);
-
-httpsServer.listen(PORT, (error) => {
+app.listen(PORT, (error) => {
   if (error) {
     console.log(`Something went wrong starting the Web SDK Example server 💔`);
   } else {

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>App Landing Template</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- <link rel="manifest" href="site.webmanifest"> -->
+  <link
+    rel="shortcut icon"
+    type="image/x-icon"
+    href="/static/assets/img/favicon.ico"
+  />
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- CSS here -->
+  <link rel="stylesheet" href="/static/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/static/assets/css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="/static/assets/css/slicknav.css" />
+  <link rel="stylesheet" href="/static/assets/css/animate.min.css" />
+  <link rel="stylesheet" href="/static/assets/css/magnific-popup.css" />
+  <link rel="stylesheet" href="/static/assets/css/fontawesome-all.min.css" />
+  <link rel="stylesheet" href="/static/assets/css/themify-icons.css" />
+  <link rel="stylesheet" href="/static/assets/css/themify-icons.css" />
+  <link rel="stylesheet" href="/static/assets/css/slick.css" />
+  <link rel="stylesheet" href="/static/assets/css/nice-select.css" />
+  <link rel="stylesheet" href="/static/assets/css/style.css" />
+  <link rel="stylesheet" href="/static/assets/css/responsive.css" />
+
+  <!-- Touchpoint here -->
+
+  <script>
+    window.topInit = function () {
+      Touchpoint.initialize({
+        // There are settings you can pass to the SDK, please check documentation
+        settings: {
+          //disabled:true,
+          devDistributor: "http://localhost:3001",
+          closeDelay: 5000,
+        },
+        visitor: {
+          // you can add more details about the visitor here
+          // id: "mostafa-1234",
+          // email: "mostafa.drz@visisoncritical.com",
+          // role: "admin",
+          //etc
+        },
+        publisher: {
+          //please don't change app_id and pod
+          app_id: "KNumWbKzoYDjeKa",
+          pod: "dev2",
+        },
+      });
+    };
+  </script>
+  <script async defer src="http://localhost:3003/main.js"></script>
+</head>
